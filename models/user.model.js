@@ -39,7 +39,7 @@ const userSchema = new mongoose.Schema(
   { timestamps: true }
 );
 
-//SIGN UP
+//REGISTER USER
 userSchema.statics.signup = async function (
   name,
   email,
@@ -76,7 +76,7 @@ userSchema.statics.signup = async function (
   return user;
 };
 
-//LOGIN
+//LOGIN USER
 userSchema.statics.login = async function (email, password) {
   if (!email || !password) {
     throw new Error("all fileds must be filled");
