@@ -25,7 +25,7 @@ app.get("/", (req, res) => {
 });
 
 /* BYPASSED APIs */
-app.use("/api/user", userRoutes);
+app.use("/api/users", userRoutes);
 
 /* DATA BASE (DB) */
 mongoose
